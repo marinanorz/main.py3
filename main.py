@@ -26,13 +26,13 @@ def hamming(text1, text2):
 print(hamming("Hund", "Mund"))
 
 
-class vehicle:
+class Vehicle:
     def __init__(self, color, fuel_type):
         self.color = color
         self.fuel_type = fuel_type
 
 
-class car(vehicle):
+class Car(Vehicle):
     def __init__(self, color, fuel_type, doors):
         super().__init__(color, fuel_type)
         self.doors = doors
@@ -40,7 +40,7 @@ class car(vehicle):
     def __str__(self):
         return f"Color: {self.color}, Fuel Type: {self.fuel_type}, Doors: {self.doors}"
 
-class bus(vehicle):
+class Bus(Vehicle):
     def __init__(self, color, fuel_type, passengers):
         super().__init__(color, fuel_type)
         self.passengers = passengers
@@ -49,13 +49,13 @@ class bus(vehicle):
         return f"Color: {self.color}, Fuel Type: {self.fuel_type}, Passengers: {self.passengers}"
 
 
-car1 = car("green", "gasoline", 4)
-bus1 = bus("silver", "diesel", 10)
+car1 = Car("green", "gasoline", 4)
+bus1 = Bus("silver", "diesel", 10)
 
 print(car1)
 print(bus1)
 
-class book:
+class Book:
     def __init__(self, name, author):
         self.name = name
         self.author = author
@@ -64,12 +64,17 @@ class book:
         return f"{self.name}, {self.author}"
 
 
-book1 = book("Dune", "Frank Herbert")
-book2 = book("Crescent City", "Sarah J. Maas")
+book1 = Book("Dune", "Frank Herbert")
+book2 = Book("Crescent City", "Sarah J. Maas")
 print(book1)
 
 
-class bookshelf:
+class Bookshelf:
     def add_book_list(self, books):
         self.books = books
+        book_list = []
+        for i in books:
+            if books == books(Book):
+                book_list.append(i)
+            print(book_list)
 
