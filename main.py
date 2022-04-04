@@ -1,3 +1,5 @@
+# Aufgabe 1
+
 def count_vowels(text):
     count = 0
     for char in text:
@@ -9,6 +11,8 @@ def count_vowels(text):
 
 print(count_vowels("thereforE"))
 
+
+# Aufgabe 2
 
 def hamming(text1, text2):
     distance = 0
@@ -25,6 +29,8 @@ def hamming(text1, text2):
 
 print(hamming("Hund", "Mund"))
 
+
+# Aufgabe 3
 
 class Vehicle:
     def __init__(self, color, fuel_type):
@@ -55,6 +61,9 @@ bus1 = Bus("silver", "diesel", 10)
 print(car1)
 print(bus1)
 
+
+# Aufgabe 4
+
 class Book:
     def __init__(self, name, author):
         self.name = name
@@ -68,6 +77,8 @@ book1 = Book("Dune", "Frank Herbert")
 book2 = Book("Crescent City", "Sarah J. Maas")
 print(book1)
 
+
+# Aufgabe 5
 
 class Bookshelf:
     def add_book_list(self, books):
